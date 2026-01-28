@@ -464,6 +464,12 @@ p {
         margin-right: 8px;
     }
 
+    body.is-fixed {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+
 }
 
 /* ファーストビュー 

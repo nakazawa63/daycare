@@ -6,6 +6,7 @@
   hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('open');
     hamburger__nav.classList.toggle('open');
+    document.body.classList.toggle('is-fixed');
   });
 }
 
