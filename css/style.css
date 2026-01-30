@@ -84,6 +84,7 @@ p {
     .section-title {
         flex-direction: column;
         margin-bottom: 40px;
+        padding: 16px 0;
     }
 
     .section-title h2 {
@@ -126,14 +127,6 @@ p {
 
 /* 背景の装飾 
 --------------------*/
-
-.background_img01 {
-    width: 192.5px;
-    position: absolute;
-    top: -170px;
-    right: -60px;
-    z-index: -1;
-}
 
 .background_img02 {
     width: 74.7px;
@@ -229,7 +222,7 @@ p {
         width: 48px;
         position: absolute;
         bottom: -130px;
-        left: 280px;
+        left: 265px;
         z-index: 1;
     }
 
@@ -472,13 +465,29 @@ p {
 
 }
 
+@media screen and (max-width: 355px) {
+
+    .header-logo {
+        padding: 0;
+    }
+
+    .header-nav {
+        justify-content: space-between;
+    }
+
+}
+
 /* ファーストビュー 
 --------------------*/
 
 .firstview {
     max-width: 1280px;
-    margin: 0 auto 96px auto;
+    margin: 0 auto;
+    padding-bottom: 96px;
     position: relative;
+    background-image: url(../images/background01.png);
+    background-size: 192.5px;
+    background-position: bottom 1px right -50px;
 }
 
 .firstview img {
